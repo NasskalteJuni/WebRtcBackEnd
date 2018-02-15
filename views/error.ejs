@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>Oops</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body{
+            overflow: hidden;
+            min-height: 100vh;
+            min-width: 100vw;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: rgb(240,240,240);
+            color: rgb(50,50,50);
+        }
+
+        .error-code-container{
+            font-size: 8em;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            height: 40%;
+            margin: 10% 20% 1% 20%;
+        }
+
+        .error-message-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            height: 10%;
+            margin: 1% 20% 10% 20%;
+        }
+
+        .back{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="error-code-container">
+        <%=error%>
+    </div>
+    <div class="error-message-container">
+        <%=message%>
+    </div>
+    <div class="back">
+        <a href="/">zurück zur Startseite</a>
+    </div>
+</main>
+</body>
+</html>
